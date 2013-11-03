@@ -1,0 +1,51 @@
+.float-right
+  %ul.list-inline
+    %li
+      %span Sort by:
+      %a.dropdown-link.dropdown-link--sort-by{:href => ""} Device name
+      .light-dropdown.light-dropdown--sort-by
+        .modal-body
+          %ul.list-block
+            %li
+              %a{:href => ""}
+                %strong Device name
+            %li
+              %a{:href => ""} iOS version
+            %li
+              %a{:href => ""} Newest phone
+
+    %li
+      %span Selection:
+      %a.dropdown-link.dropdown-link--selection{:href => ""} Autosaved 3 days ago
+      .light-dropdown.light-dropdown--selection
+        .modal-body
+          %ul.list-block
+            %li
+              %a{:href => ""}
+                %strong
+                  Auto saved
+                  %span.time 3 days ago
+
+            %li
+              %a{:href => ""}
+                %span
+                  HTC level 4 & up
+                  %span.time 5 days ago
+
+            %li
+              %a{:href => ""}
+                %span
+                  Wallmart devices
+                  %span.time 11 days ago
+
+            %li.delimter
+            %li
+              %a.positive{:href => ""} Save current selection
+
+
+    %li
+      %span Select:
+      %a{:href => ""} All
+      %a{:href => ""} None
+
+%span Displaying all devices

@@ -1,0 +1,95 @@
+@import "css3-mixins";
+
+$color-dimmed: #999;
+
+// Added to give visualize modal context
+body {
+  background: #989898 !important; }
+
+.modal {
+  background: #989898 url(/images/modal.png);
+  width: 959px;
+  height: 628px;
+  margin: 2em auto; }
+
+.list-inline li{
+  display: inline-block; }
+
+.list-block li{
+  display: block;
+}
+
+
+.device-selector__options {
+  width: 850px;
+  position: relative;
+  top: 100px;
+  left: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 13px;
+
+  .float-right {
+    color: $color-dimmed;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  li {
+    margin-right: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .list-block li{
+    margin-right: 0;
+  }
+}
+
+.light-dropdown {
+  .time {
+    font-weight: normal;
+    color: $color-dimmed;
+    &:before {
+      content: ' · ';
+    }
+  }
+
+  .delimter {
+    height: 10px; }
+
+  .positive:hover {
+    background: #3b5998;
+    color: #fff
+  }
+}
+
+.light-dropdown.active {
+  margin-top: 6px;
+  display: block;
+  -webkit-animation: dropdown-appear 400ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+@-webkit-keyframes dropdown-appear {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+.light-dropdown--sort-by{
+  margin-left: 34px; }
+
+.light-dropdown--selection{
+  margin-left: 45px;
+}
+
+
