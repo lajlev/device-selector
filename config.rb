@@ -68,3 +68,8 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+activate :fjords do |fjords|
+  fjords.username = ENV["FJORDS_USERNAME"]
+  fjords.password = ENV["FJORDS_PASSWORD"]
+end
