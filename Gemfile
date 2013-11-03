@@ -7,5 +7,5 @@ gem "middleman", "~>3.1.6"
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
-# Latest pre release of sass
-gem "sass", "~> 3.2.12"
+# Publishing service fjords.cc
+gem 'middleman-fjords'
